@@ -80,32 +80,32 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Review
 
-- `Review#customer`
+- `Review#customer` [x]
   - returns the customer object for that review
   - Once a review is created, should not be able to change the customer
-- `Review#restaurant`
+- `Review#restaurant` [x]
   - returns the restaurant object for that given review
   - Once a review is created, should not be able to change the restaurant
 
 #### Restaurant
 
-- `Restaurant#reviews`
+- `Restaurant#reviews` [x]
   - returns an array of all reviews for that restaurant
-- `Restaurant#customers`
+- `Restaurant#customers` [x]
   - Returns a **unique** list of all customers who have reviewed a particular restaurant.
 
 #### Customer
 
-- `Customer#restaurants`
+- `Customer#restaurants` [x]
   - Returns a **unique** array of all restaurants a customer has reviewed
-- `Customer#add_review(restaurant, rating)`
+- `Customer#add_review(restaurant, rating)` [x]
   - given a **restaurant object** and a star rating (as an integer), creates a new review and associates it with that customer and restaurant.
 
 ### Aggregate and Association Methods
 
 #### Customer
 
-- `Customer#num_reviews`
+- `Customer#num_reviews` [x]
   - Returns the total number of reviews that a customer has authored
 - `Customer.find_by_name(name)`
   - given a string of a **full name**, returns the **first customer** whose full name matches

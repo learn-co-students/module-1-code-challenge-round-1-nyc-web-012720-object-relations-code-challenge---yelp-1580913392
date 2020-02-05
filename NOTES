@@ -1,0 +1,27 @@
+# instance methods (method signature)
+. class mehtods (self.(method signature))
+
+
+Restaurant -< Reviews >- Customer
+
+Restaurant:
+[x] #intialize
+    [x] #name - attr_reader
+
+
+Reviews:
+[x] #initialize 
+    [x] #customer
+    [x] #restaurant
+    [x] #rating
+[x] .all - returns all of the reviews
+[] #customer - instance method, attr_reader
+[] #restaurant - instance method, attr_reader
+
+
+Customer:
+[x] #intialize
+    [x] #given_name - attr_reader
+    [x] #family_name - attr_reader
+[x] #full_name - returns the full name - given then family
+[x] .all - returns all customer instances
