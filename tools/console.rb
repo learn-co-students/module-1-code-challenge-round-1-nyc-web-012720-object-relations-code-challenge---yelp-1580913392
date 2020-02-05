@@ -3,9 +3,20 @@ require_relative '../config/environment.rb'
 def reload
   load 'config/environment.rb'
 end
-# Insert code here to run before hitting the binding.pry
-# This is a convenient place to define variables and/or set up new object instances,
-# so they will be available to test and play around with in your console
+
+chip = Restaurant.new("Chipotle")
+chinese = Restaurant.new("Luck Foo")
+steak = Restaurant.new("Outback Steak House")
+
+cust1 = Customer.new("Sam", "Chen")
+cust2 = Customer.new("Jason", "Wong")
+cust3 = Customer.new("Allen", "Po")
+cust4 = Customer.new("Sam", "Kong")
+
+rev1 = Review.new(cust1, chip, 4)
+rev2 = Review.new(cust2, chinese, 4.5)
+rev3 = Review.new(cust3, steak, 4.2)
+rev4 = Review.new(cust1, chinese, 3.9)
 
 binding.pry
 0 #leave this here to ensure binding.pry isn't the last line
